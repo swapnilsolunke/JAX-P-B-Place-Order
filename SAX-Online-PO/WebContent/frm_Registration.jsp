@@ -7,35 +7,11 @@
 <title>Server Caching Registration form</title>
 <link rel="shortcut icon" href="resourcess/img/logo.png">
 <link rel="stylesheet" href="resourcess/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="resourcess/css/style.css">
+<link rel="stylesheet" href="resourcess/css/custom-style.css">
 <script src="resourcess/js/jquery.min.1.11.1.js"></script>
 <script src="resourcess/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="resourcess/js/magic.js"></script> <!-- load our javascript file -->
-<style>
-        .loaderBg{
-            top:0;
-            margin-top : 6%;
-            width:100%;
-            height:100%;
-            opacity:0.9;
-            background:#fff;
-            position:fixed;
-            display:none;
-            z-index:300;
-        }
-        .loaderPs{
-            padding:20px;
-            position:fixed;
-            top:30%;
-            left:40%; 
-            right:auto;
-            display:none;
-            width:20%;
-            text-align:center;
-            border-radius:30px;
-            z-index:301;
-            font-size: 15px;
-        } 
-    </style>
 </head>
 <body>
 	<div id="loader" class="loaderBg">
@@ -48,8 +24,8 @@
 		$('#loaderImg').fadeIn(1000);
 	</script>
 <jsp:include page="header.jsp"></jsp:include>
-<div class="container">
-	<h2>Registration Form</h2>
+<div class="container invoiceBody">
+	<h2 class="invoiceHeading">Registration Form</h2>
 	<div id="msg"></div>
 	<div class="row">
 		<form role="form" action="register/save" method="post">
@@ -58,13 +34,13 @@
 					<div class="col-md-6">
 						  <div id="fname-group" class="form-group">
 						    <label for="fname">Enter first Name:</label>
-						    <input type="text" name="fname" class="form-control" id="fname">
+						    <input type="text" name="fname" class="form-control" id="fname" required placeholder="Enter First Name">
 						  </div>
 					</div>
 					<div class="col-md-6">
 						<div id="lname-group" class="form-group">
 						    <label for="lname">Enter last name</label>
-						    <input type="text" name="lname" class="form-control"  id="lname" requierd>
+						    <input type="text" name="lname" class="form-control"  id="lname" required placeholder="Enter last name">
 						</div>
 					</div>
 				</div>
@@ -72,19 +48,19 @@
 					<div class="col-md-6">
 						  <div id="email-group" class="form-group">
 						    <label for="email">Email address:</label>
-						    <input type="email" name="email" class="form-control" id="email">
+						    <input type="email" name="email" class="form-control" id="email" required placeholder="Enter email id">
 						  </div>
 					</div>
 					<div class="col-md-6">
 						<div id="pwd-group" class="form-group">
 						    <label for="pwd">Password:</label>
-						    <input type="password" name="pwd" class="form-control" id="pwd">
+						    <input type="password" name="pwd" class="form-control" id="pwd" required placeholder="Enter password">
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<button type="submit" class="btn btn-info btn-block">Submit</button>
+						<button type="submit" class="btn my-btn btn-block">Submit</button>
 					</div>
 				</div>
 				<input type="hidden" id="ip" name="ip">

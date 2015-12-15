@@ -13,6 +13,7 @@ import java.util.HashMap;
 import com.rudrasoft.saxonlinepo.bo.Invoice_BO;
 import com.rudrasoft.saxonlinepo.handler.SAX_XMLPOReader;
 import com.rudrasoft.saxonlinepo.util.DBconnection;
+import com.rudrasoft.saxonlinepo.util.NumberToLetters;
 
 /**
  * @author Rudra
@@ -90,7 +91,15 @@ public class Invoice_dao {
 		}
 		invoiceMap.put("subTotal", subTotal);
 		invoiceMap.put("shippingPrice", shippingPrice);
-		invoiceMap.put("total", subTotal + shippingPrice);
+		long total = subTotal + shippingPrice;
+		invoiceMap.put("total", total);
+		try {
+			String amnt = NumberToLetters.getNumberInWord((int)total);
+			invoiceMap.put("amtInWord", amnt.toUpperCase());
+		} catch (Exception e) {
+			invoiceMap.put("amtInWord", "");
+			e.printStackTrace();
+		}
 		invoiceMap.put("address", handler.getAddLine1()+" "+handler.getAddLine2());
 		invoiceMap.put("city", handler.getCity());
 		invoiceMap.put("state", handler.getState());

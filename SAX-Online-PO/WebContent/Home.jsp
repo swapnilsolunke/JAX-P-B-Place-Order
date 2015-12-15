@@ -4,15 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Server Cache Home</title>
+<title>Bulk Order System Home</title>
 <link rel="shortcut icon" href="resourcess/img/logo.png">
 <link rel="stylesheet" href="resourcess/bootstrap/3.2.0/css/bootstrap.min.css">
 <script src="resourcess/js/jquery.min.1.11.1.js"></script>
 <script src="resourcess/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-<%/*Background video library */ %>
-<link rel="stylesheet" href="resourcess/Back_Vid/css/fullscreenDemo.css">
-<script src="resourcess/Back_Vid/js/vidbg.js"></script>
 <style type="text/css">
 	.invoiceHeading{
 			background: rgba(241, 243, 242, 0.55);
@@ -29,7 +26,7 @@
 		
 </style>
 </head>
-<body>
+<body style="background-image: url('resourcess/img/bg_lea1.png');">
 <jsp:include page="loggedHeader.jsp"></jsp:include>
 	<div class="container">
 		<h2 class="invoiceHeading">
@@ -47,18 +44,4 @@
 		</h2>
 	</div>
 </body>
-<script type="text/javascript">
-jQuery(function($){
-    $('body').vidbg({
-        'mp4': 'resourcess/Back_Vid/demo1/vid/Undo.mp4',
-        'webm': 'resourcess/Back_Vid/demo1/vid/Undo.webm',
-        'poster': 'resourcess/Back_Vid/demo1/vid/Undo.jpg'
-    }, {
-      // Options
-      muted: true,
-      loop: true,
-				overlay: true,
-    });
-});
-</script>
 </html>

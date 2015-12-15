@@ -8,160 +8,22 @@
 <link rel="shortcut icon" href="resourcess/img/logo.png">
 <link rel="stylesheet" href="resourcess/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="resourcess/css/style.css">
-<link rel="stylesheet" href="resourcess/css/TableCSSCode.css">
+<link rel="stylesheet" href="resourcess/css/custom-style.css">
 
 <script src="resourcess/js/jquery.min.1.11.1.js"></script>
 <script src="resourcess/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="resourcess/js/jquery.ajaxfileupload.js"></script>
 <style>
-        .loaderBg{
-            top:0;
-            margin-top : 6%;
-            width:100%;
-            height:100%;
-            opacity:0.9;
-            background:#fff;
-            position:fixed;
-            display:none;
-            z-index:300;
-        }
-        .loaderPs{
-            padding:20px;
-            position:fixed;
-            top:30%;
-            left:40%; 
-            right:auto;
-            display:none;
-            width:20%;
-            text-align:center;
-            border-radius:30px;
-            z-index:301;
-            font-size: 15px;
-            
-        } 
-        /* .loaderImg{
-        	width: ;
-        	height: 70%;
-        } */
-        .invoice{
-			background: #353e47;
-		    border: 1px solid #4a545e;
-		    border-radius:8px;
-		    -webkit-border-radius:8px;
-		    -moz-border-radius:8px;
-		    box-shadow: 5px 5px 22px -2px rgba(0, 0, 0, 0.5);
-		    -webkit-box-shadow: 5px 5px 22px -2px rgba(0, 0, 0, 0.5);
-		    -moz-box-shadow: 5px 5px 22px -2px rgba(0, 0, 0, 0.5);
-		    margin-bottom:20px;
-		    padding: 15px 26px;
-		}
-		.invoiceBody{
-			background: rgb(117, 165, 114);
-		    border: 1px solid rgb(117, 165, 114);
-		    border-radius:0px;
-		    -webkit-border-radius:0px;
-		    -moz-border-radius:0px;
-		    box-shadow: 5px 5px 22px -2px rgba(0, 0, 0, 0.7);
-		    -webkit-box-shadow: 5px 5px 22px -2px rgba(0, 0, 0, 0.7);
-		    -moz-box-shadow: 5px 5px 22px -2px rgba(0, 0, 0, 0.7);
-		    margin-bottom:20px;
-		    padding: 15px 26px;
-		}
-        .label_title{
-			background:url(resourcess/img/ribbons.png) repeat-y; height: 40px; line-height: 30px; padding-left:40px;
-			width: 200px;
-		}
-
-		.invoiceHeading{
-			background: rgba(76, 175, 80, 0.02);
-		    border: 1px solid rgba(74, 84, 94, 0.08);
-		    border-radius:8px;
-		    -webkit-border-radius:8px;
-		    -moz-border-radius:8px;
-		    box-shadow: 5px 5px 22px -2px rgba(0, 0, 0, 0.7);
-		    -webkit-box-shadow: 5px 5px 22px -2px rgba(0, 0, 0, 0.7);
-		    -moz-box-shadow: 5px 5px 22px -2px rgba(0, 0, 0, 0.7);
-		    margin-bottom:20px;
-		    padding: 15px 26px;
-		}
-
-
-		body{
-			color: white;
-		}
-		
-		#customFormView{
+        #customFormView{
 			display: none;
 		}
 		
-		#xmlFormView{
+		#xmlFormView, #poNew{
 			display: none;
 		}
 		#customFormView td{
 			padding: 2px;
 			text-align: center;
-		}
-		
-		
-		.my-btn, .my-btn:link, .my-btn:visited {
-		    color: #FFFFFF;
-		    background-color: rgba(255, 152, 0, 0.65);
-		    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		}
-		.my-btn {
-		    border: none;
-		    display: inline-block;
-		    outline: 0;
-		    padding: 6px 16px;
-		    vertical-align: middle;
-		    overflow: hidden;
-		    text-decoration: none !important;
-		    color: #fff;
-		    background-color: #D59E30;
-		    text-align: center;
-		    transition: .2s ease-out;
-		    cursor: pointer;
-		    white-space: nowrap;
-		}
-		.my-btn:hover,.my-btn:active {
-		    background-color:#ffffff;
-		    color:#8AC007;
-		    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-		}
-		
-		.box {
-		  position: relative;
-		  background-color: #fff;
-		  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
-		  border-radius: 0%     12%     14%     27% /     40%     0%     0%     13%;
-		}
-		.box:before {
-		      position: absolute;
-		      width: 94%;
-		      height: 22%;
-		      left: 3%;
-		      border-radius: 48%;
-		      z-index: -1;
-		      top: 1%;
-		      content: "";
-		      box-shadow: 0 -7px 19px rgba(0,0,0,0.41);
-		      }
-		.box:after {
-		      position: absolute;
-		      width: 94%;
-		      height: 22%;
-		      left: 3%;
-		      border-radius: 48%;
-		      z-index: -1;
-		      bottom: 1%;
-		      content: "";
-		      box-shadow: 0 7px 19px rgba(0,0,0,0.41);
-		      }
-		 select option {
-		    margin:40px;
-		    background: rgb(117, 165, 114);
-		    color:#fff;
-		    text-shadow:0 1px 0 rgba(0,0,0,0.4);
 		}
     </style>
     
@@ -182,7 +44,14 @@
 	<div id="msg"></div>
 	<div class="row">
 		<div class="col-md-12">
-			
+				
+				<div class="row" id="poNew">
+					<div class="col-md-12">
+						<input type="button" value="Place New Order" onclick="poNew();" class="my-btn"/>
+					</div>
+				</div>
+				
+				<div id="hidePOOp">
 				<div class="row">
 					<div class="col-md-12">
 						  <div id="fname-group" class="form-group">
@@ -310,6 +179,7 @@
 					
 					</form>
 				</div>
+				</div>
 			<div class="row">
 				<div class="table-responsive col-md-12"> 
 					<hr>
@@ -322,6 +192,10 @@
 </div>
 </body>
 <script type="text/javascript">
+
+///////////////////////////////////////////////////////////
+/////////// Setting Place Order option xml/form //////////
+/////////////////////////////////////////////////////////
 function poType(poTypeVal) {
 	if(poTypeVal == "opt1"){
 		document.getElementById('xmlFormView').style.display = "block";
@@ -334,6 +208,19 @@ function poType(poTypeVal) {
 		$("#res").html("");
 	}
 }
+
+function poNew() {
+	document.getElementById('poNew').style.display = "none";
+	document.getElementById('hidePOOp').style.display = "block";
+	document.getElementById('xmlFormView').style.display = "none";
+	document.getElementById('customFormView').style.display = "none";
+	$("#res").html("");
+	$("#msg").html("");
+}
+
+///////////////////////////////////////////////////////////
+/////XML FIle uploding using ajax file upload/////////////
+/////////////////////////////////////////////////////////
  $(document).ready(function() {
 	$('input[type="file"]').ajaxfileupload({
 		'action' : 'plcaepo/uploadXML',
@@ -341,16 +228,21 @@ function poType(poTypeVal) {
 			$('#loader').fadeOut(1000);
 	        $('#loaderImg').fadeOut(1000);
 	        $('#message').show();
+	        $("#msg").html("");
 			
 			var statusVal = JSON.stringify(response.status);
 			console.log("Respose :::> "+JSON.stringify(response));
 			if(statusVal == "false")
 			{
 				$("#message").html("<font color='red'>"+ JSON.stringify(response.message) +" </font>");
+				$('#msg').append('<div id="success-id" class="alert alert-danger fade in">'+ JSON.stringify(response.message) +'<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>');
 			}	
 			if(statusVal == "true")
 			{
+				$('#hidePOOp').fadeOut(1000);
+		        $('#poNew').fadeIn(1000);
 				$("#message").html("<font color='green'>"+ JSON.stringify(response.message) +" </font>");
+				$('#msg').append('<div id="success-id" class="alert alert-success fade in">Your order is placed successfully<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>');
 			}			
 		},
 		'onStart' : function() {
@@ -361,38 +253,17 @@ function poType(poTypeVal) {
 	});
 }); 
  
-  //Register User
-/*  //callback handler for form submit
-$("#frmPO").submit(function(e)
-{
-    var postData = $(this).serializeArray();
-    var formURL = $(this).attr("action");
-    $.ajax(
-    {
-        url : formURL,
-        type: "POST",
-        data : postData,
-        success:function(data, textStatus, jqXHR) 
-        {
-            //data: return data from server
-        },
-        error: function(jqXHR, textStatus, errorThrown) 
-        {
-            //if fails      
-        }
-    });
-    e.preventDefault(); //STOP default action
-    e.unbind(); //unbind. to stop multiple form submit.
-});
- 
-$("#frmPO").submit(); //Submit  the FORM */
+
 //=================================================================
-  
+ ///////////////////////////////////////////////////////////
+///////////////////ajax form submit////////////////////////
+/////////////////////////////////////////////////////////
   
  $(document).ready(function() {
 
     // process the form
     $('#frmPO').submit(function(event) {
+    	$("#msg").html("");
     	$('#loader').fadeIn(1000); 
     	$('#loaderImg').fadeIn(1000);
     	$('.form-group').removeClass('has-error'); // remove the error class
@@ -410,10 +281,14 @@ $("#frmPO").submit(); //Submit  the FORM */
             {
                 //data: return data from server
                 $('#res').html(data);
+                $('#hidePOOp').fadeOut(1000);
+    	        $('#poNew').fadeIn(1000);
+    	        $('#msg').append('<div id="success-id" class="alert alert-success fade in">Your order is placed successfully<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>');
             },
             error: function(jqXHR, textStatus, errorThrown) 
             {
-            	alert('error!!!!!!!!!');
+            	//alert('error!!!!!!!!!');
+            	$('#msg').append('<div id="success-id" class="alert alert-danger fade in">Server internal problem, Please try again<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>');
                 //if fails      
             }
         });
@@ -433,9 +308,9 @@ $("#frmPO").submit(); //Submit  the FORM */
       $('#m1').removeClass('active');
  });
  
- /**
- 
- */
+///////////////////////////////////////////////////////////
+/////////////////Item row adder///////////////////////////
+/////////////////////////////////////////////////////////
  function addRow(tableID) {
 	 
      var table = document.getElementById(tableID);
@@ -465,6 +340,9 @@ $("#frmPO").submit(); //Submit  the FORM */
      }
  }
 
+///////////////////////////////////////////////////////////
+/////////////////////Item row deleter/////////////////////
+/////////////////////////////////////////////////////////
  function deleteRow(tableID) {
      try {
      var table = document.getElementById(tableID);

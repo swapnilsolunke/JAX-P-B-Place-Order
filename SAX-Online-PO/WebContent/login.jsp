@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Server Caching Login Form</title>
+<title>Bulk Order System Login</title>
 <link rel="shortcut icon" href="resourcess/img/logo.png">
 <link href='' rel='stylesheet' type='text/css'>
 <style>
@@ -139,10 +139,6 @@ link{
 <script src="resourcess/js/jquery.min.1.11.1.js"></script>
 <script src="resourcess/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-<%/*Background video library */ %>
-<link rel="stylesheet" href="resourcess/Back_Vid/css/fullscreenDemo.css">
-<script src="resourcess/Back_Vid/js/vidbg.js"></script>
-
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
@@ -244,19 +240,6 @@ $(document).ready(function() {
 $( window ).load(function() {
 	  $('#loader').fadeOut(1000);
     $('#loaderImg').fadeOut(1000);
-});
-
-jQuery(function($){
-    $('body').vidbg({
-        'mp4': 'resourcess/Back_Vid/demo1/vid/Meeting-Room/Meeting-Room.mp4',
-        'webm': 'resourcess/Back_Vid/demo1/vid/Meeting-Room/Meeting-Room.webm',
-        'poster': 'resourcess/Back_Vid/demo1/vid/Meeting-Room/Meeting-Room.jpg'
-    }, {
-      // Options
-      muted: true,
-      loop: true,
-		overlay: true,
-    });
 });
 </script>
 
