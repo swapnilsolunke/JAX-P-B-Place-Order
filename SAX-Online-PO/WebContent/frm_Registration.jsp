@@ -107,7 +107,6 @@
                 // here we will handle errors and validation messages
                 // here we will handle errors and validation messages
 		        if ( ! data.success) {
-		        	startInterval();
 		            // handle errors for first name ---------------
 		            if (data.errors.fname) {
 		                $('#fname-group').addClass('has-error'); // add the error class to show red input

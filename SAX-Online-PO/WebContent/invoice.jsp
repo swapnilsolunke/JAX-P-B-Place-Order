@@ -121,9 +121,13 @@
 								    		<td style="text-align: right;" colspan="5">SUB-TOTAL &nbsp;&nbsp; <br> SHIPPING PRICE &nbsp;&nbsp;</td>
 								    		<td style="text-align: right;"><%=invoiceMap.get("subTotal") %> <br> <%=invoiceMap.get("shippingPrice") %></td>
 								    	</tr>
-								    	<tr style="background-color: rgba(255, 7, 7, 0.15);">
+								    	<tr style="background-color: rgba(255, 7, 7, 0.05);">
 								    		<td style="text-align: right;" colspan="5">TOTAL PAID FOR PRODUCTS MENTIONED ABOVE &nbsp;&nbsp;</td>
 								    		<td style="text-align:right;"><%=invoiceMap.get("total") %></td>
+								    	</tr>
+								    	<tr style="background-color: rgba(255, 7, 7, 0.15);">
+								    		<td style="text-align: right;" colspan="2">TOTAL AMOUNT IN WORD : &nbsp;&nbsp;</td>
+								    		<td style="text-align:left;" colspan="4"><%=invoiceMap.get("amtInWord") %></td>
 								    	</tr>
 								    	<tr>
 								    		<td style="background-color: rgba(255, 7, 7, 0.45); text-align: center;" colspan="6">THIS IS A COMPUTERD GENERATED INVOICE AND DOES NOT REQUIERE SIGNATURE</td>
